@@ -1,0 +1,72 @@
+[16-Dec-2020 05:21:39 UTC] PHP Warning:  include(/admin-agisi/model/backend.class.php): failed to open stream: No such file or directory in /var/www/html/index.php on line 1
+[16-Dec-2020 05:21:39 UTC] PHP Stack trace:
+[16-Dec-2020 05:21:39 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 05:21:39 UTC] PHP Warning:  include(): Failed opening '/admin-agisi/model/backend.class.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 1
+[16-Dec-2020 05:21:39 UTC] PHP Stack trace:
+[16-Dec-2020 05:21:39 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 05:58:18 UTC] PHP Warning:  include(part/body/carousel.php): failed to open stream: No such file or directory in /var/www/html/index.php on line 15
+[16-Dec-2020 05:58:18 UTC] PHP Stack trace:
+[16-Dec-2020 05:58:18 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 05:58:18 UTC] PHP Warning:  include(): Failed opening 'part/body/carousel.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 15
+[16-Dec-2020 05:58:18 UTC] PHP Stack trace:
+[16-Dec-2020 05:58:18 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 06:22:10 UTC] PHP Warning:  include(part/body/nuevos-productos): failed to open stream: No such file or directory in /var/www/html/index.php on line 16
+[16-Dec-2020 06:22:10 UTC] PHP Stack trace:
+[16-Dec-2020 06:22:10 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 06:22:10 UTC] PHP Warning:  include(): Failed opening 'part/body/nuevos-productos' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 16
+[16-Dec-2020 06:22:10 UTC] PHP Stack trace:
+[16-Dec-2020 06:22:10 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 06:22:17 UTC] PHP Warning:  include(part/body/nuevos-productos): failed to open stream: No such file or directory in /var/www/html/index.php on line 16
+[16-Dec-2020 06:22:17 UTC] PHP Stack trace:
+[16-Dec-2020 06:22:17 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 06:22:17 UTC] PHP Warning:  include(): Failed opening 'part/body/nuevos-productos' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 16
+[16-Dec-2020 06:22:17 UTC] PHP Stack trace:
+[16-Dec-2020 06:22:17 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 06:22:19 UTC] PHP Warning:  include(part/body/nuevos-productos): failed to open stream: No such file or directory in /var/www/html/index.php on line 16
+[16-Dec-2020 06:22:19 UTC] PHP Stack trace:
+[16-Dec-2020 06:22:19 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 06:22:19 UTC] PHP Warning:  include(): Failed opening 'part/body/nuevos-productos' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 16
+[16-Dec-2020 06:22:19 UTC] PHP Stack trace:
+[16-Dec-2020 06:22:19 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 06:22:19 UTC] PHP Warning:  include(part/body/nuevos-productos): failed to open stream: No such file or directory in /var/www/html/index.php on line 16
+[16-Dec-2020 06:22:19 UTC] PHP Stack trace:
+[16-Dec-2020 06:22:19 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 06:22:19 UTC] PHP Warning:  include(): Failed opening 'part/body/nuevos-productos' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 16
+[16-Dec-2020 06:22:19 UTC] PHP Stack trace:
+[16-Dec-2020 06:22:19 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 06:22:19 UTC] PHP Warning:  include(part/body/nuevos-productos): failed to open stream: No such file or directory in /var/www/html/index.php on line 16
+[16-Dec-2020 06:22:19 UTC] PHP Stack trace:
+[16-Dec-2020 06:22:19 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 06:22:19 UTC] PHP Warning:  include(): Failed opening 'part/body/nuevos-productos' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 16
+[16-Dec-2020 06:22:19 UTC] PHP Stack trace:
+[16-Dec-2020 06:22:19 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 07:09:06 UTC] PHP Warning:  include(part/footer/promocion.php): failed to open stream: No such file or directory in /var/www/html/index.php on line 30
+[16-Dec-2020 07:09:06 UTC] PHP Stack trace:
+[16-Dec-2020 07:09:06 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 07:09:06 UTC] PHP Warning:  include(): Failed opening 'part/footer/promocion.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 30
+[16-Dec-2020 07:09:06 UTC] PHP Stack trace:
+[16-Dec-2020 07:09:06 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 07:09:07 UTC] PHP Warning:  include(part/footer/promocion.php): failed to open stream: No such file or directory in /var/www/html/index.php on line 30
+[16-Dec-2020 07:09:07 UTC] PHP Stack trace:
+[16-Dec-2020 07:09:07 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Dec-2020 07:09:07 UTC] PHP Warning:  include(): Failed opening 'part/footer/promocion.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 30
+[16-Dec-2020 07:09:07 UTC] PHP Stack trace:
+[16-Dec-2020 07:09:07 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Jan-2021 07:55:38 UTC] PHP Warning:  include(part/body/contacta): failed to open stream: No such file or directory in /var/www/html/index.php on line 20
+[16-Jan-2021 07:55:38 UTC] PHP Stack trace:
+[16-Jan-2021 07:55:38 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Jan-2021 07:55:38 UTC] PHP Warning:  include(): Failed opening 'part/body/contacta' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 20
+[16-Jan-2021 07:55:38 UTC] PHP Stack trace:
+[16-Jan-2021 07:55:38 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Jan-2021 07:56:15 UTC] PHP Warning:  include(part/body/contacta): failed to open stream: No such file or directory in /var/www/html/index.php on line 20
+[16-Jan-2021 07:56:15 UTC] PHP Stack trace:
+[16-Jan-2021 07:56:15 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Jan-2021 07:56:15 UTC] PHP Warning:  include(): Failed opening 'part/body/contacta' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 20
+[16-Jan-2021 07:56:15 UTC] PHP Stack trace:
+[16-Jan-2021 07:56:15 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Jan-2021 07:57:28 UTC] PHP Warning:  include(part/body/banner.php): failed to open stream: No such file or directory in /var/www/html/index.php on line 21
+[16-Jan-2021 07:57:28 UTC] PHP Stack trace:
+[16-Jan-2021 07:57:28 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[16-Jan-2021 07:57:28 UTC] PHP Warning:  include(): Failed opening 'part/body/banner.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 21
+[16-Jan-2021 07:57:28 UTC] PHP Stack trace:
+[16-Jan-2021 07:57:28 UTC] PHP   1. {main}() /var/www/html/index.php:0
