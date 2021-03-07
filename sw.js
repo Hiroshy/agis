@@ -6,11 +6,11 @@ const CACHE_NAME = 'v1_cache_agis',
     'https://unpkg.com/swiper/swiper-bundle.min.css',
     'https://kit.fontawesome.com/0ce30eaf4c.js',
     'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css',
-    '/assets/css/theme.css',
+    'app/design/theme/assets/css/theme.css',
     'https://code.jquery.com/jquery-3.3.1.slim.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js',
     'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js',
-    'https://unpkg.com/swiper/swiper-bundle.min.js',
+    'https://unpkg.com/swiper/swiper-bundle.min.js'
   ]
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
