@@ -5,6 +5,7 @@
  
     const DB_TYPE="mysql";
     const DB_SERVIDOR="127.0.0.1";
+    const DB_PORT="3306";
     const DB_CHARSET="utf8";
 
     abstract class DB {
@@ -18,6 +19,8 @@
         private static $db_nombre="dash_database";
         // Codificación de la base de datos
         private static $db_charset=DB_CHARSET;
+        // Puerto de la base de datos
+        private static $db_port=DB_PORT;
         // Conexión con la base de datos
         private $conexion;
         
@@ -27,7 +30,7 @@
                 $pdo= new PDO($str,self::$db_usuario,self::$db_pass);
                 $pdo->exec("SET CHARSET SET".self::$db_charset);
                 $pdo->query("SET NAMES 'utf8'");
-                return $pdo;
+                print_r($pdo);
             }catch(PDOException $e){
                 exit("Error: ".$e->getMessage());
             }

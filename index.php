@@ -32,5 +32,6 @@
     <?php include('app/design/theme/part/body/banner.php'); ?>
     <?php include('app/design/theme/part/footer/footer.php');?>
     <?php include('app/design/theme/part/footer/js.php');?>
+    <?php include('app/design/theme/part/footer/json-ld.php');?>
   </body>
 </html>

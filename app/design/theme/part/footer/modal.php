@@ -73,8 +73,8 @@
                 </ul>
             </div>
 
-            <img src="assets/media/others/escudo_jerusalem.png" class="img-fluid emblema_jerusalem" alt="escudo jerusalem agis" />
-            <img src="assets/media/others/peru_logo.png" class="img-fluid emblema_peru" alt="escudo jerusalem agis" />
+            <img src="app/design/theme/assets/media/others/escudo_jerusalem.png" class="img-fluid emblema_jerusalem" alt="escudo jerusalem agis" />
+            <img src="app/design/theme/assets/media/others/peru_logo.png" class="img-fluid emblema_peru" alt="escudo jerusalem agis" />
             <div class="form-group box-bottom">
                 <button class="btn btn-danger close_btn">Cerrar</button>
             </div>
@@ -92,14 +92,18 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        <form action="./buscar">
-          <div class="form-group">
-            <input type="text" name="search" id="search" class="form-control">
-          </div>
-          <button type="submit" class="btn btn-danger">Buscar</button>
-        </form>
-      </div>
+      <div id="form_buscar" class="modal-body" itemscope itemtype=”http://schema.org/WebSite”>
+            <meta itemprop=”url” content=”https://www.ejemplo.com/”/>
+            <form action="./buscar" itemprop=”potentialAction” itemscope itemtype=”http://schema.org/SearchAction”>
+                <div class="box-content">
+                    <meta itemprop=”target” content=”https://query.ejemplo.com/search?q={search_term_string}”/>
+                    <input itemprop=”query-input” type="text" name="”search_term_string”" id="search_by" class="form-control pd-3" autocorrect="on">
+                    <button type="submit" class="btn_search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
   </div>
 </div>

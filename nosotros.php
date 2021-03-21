@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 py-5 align-self-center text-center">
-                    <img src="assets/media/others/ceo_amesh.jpg" class="img-fluid" alt="CEO AMESH">
+                    <img src="app/design/theme/assets/media/others/ceo_amesh.jpg" class="img-fluid" alt="CEO AMESH">
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5 py-5 align-self-center text-center">
-                    <img src="assets/media/logo/agis_logo.png" class="img-fluid" alt="CEO AMESH">
+                    <img src="app/design/theme/assets/media/logo/agis_logo.png" class="img-fluid" alt="CEO AMESH">
                 </div>
                 <div class="col-md-7 py-5 align-self-center">
                     <div class="form-group">
@@ -91,5 +91,6 @@
     <?php include('app/design/theme/part/body/banner.php'); ?>
     <?php include('app/design/theme/part/footer/footer.php');?>
     <?php include('app/design/theme/part/footer/js.php');?>
+    <?php include('app/design/theme/part/footer/json-ld.php');?>
   </body>
 </html>

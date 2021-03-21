@@ -97,10 +97,10 @@
                 </a>
                 <ul class="side-nav-second-level" aria-expanded="false">
                     <li>
-                        <a href="<?= $app['base_url_admin']."module/catalog/product/new"; ?>">Productos</a>
+                        <a href="<?= $app['base_url_admin']."module/catalog/product/all"; ?>">Productos</a>
                     </li>
                     <li>
-                        <a href="<?= $app['base_url_admin']."module/catalog/category/new"; ?>">Categorias</a>
+                        <a href="<?= $app['base_url_admin']."module/catalog/category/all"; ?>">Categorias</a>
                     </li>
                 </ul>
             </li>

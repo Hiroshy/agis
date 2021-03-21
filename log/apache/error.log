@@ -1,0 +1,51 @@
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.7. Set the 'ServerName' directive globally to suppress this message
+[Tue Mar 09 00:06:01.443608 2021] [core:warn] [pid 15:tid 139786483515456] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Mar 09 00:06:01.444680 2021] [mpm_event:notice] [pid 15:tid 139786483515456] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Mar 09 00:06:01.444710 2021] [core:notice] [pid 15:tid 139786483515456] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.7. Set the 'ServerName' directive globally to suppress this message
+[Wed Mar 10 03:48:11.183983 2021] [core:warn] [pid 16:tid 140282499776576] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Mar 10 03:48:11.184594 2021] [mpm_event:notice] [pid 16:tid 140282499776576] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Wed Mar 10 03:48:11.184609 2021] [core:notice] [pid 16:tid 140282499776576] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.8. Set the 'ServerName' directive globally to suppress this message
+[Thu Mar 11 03:54:12.008034 2021] [core:warn] [pid 16:tid 140578299023424] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Mar 11 03:54:12.008633 2021] [mpm_event:notice] [pid 16:tid 140578299023424] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Thu Mar 11 03:54:12.008650 2021] [core:notice] [pid 16:tid 140578299023424] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.7. Set the 'ServerName' directive globally to suppress this message
+[Fri Mar 12 19:48:00.250595 2021] [core:warn] [pid 15:tid 140621978705984] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Mar 12 19:48:00.251510 2021] [mpm_event:notice] [pid 15:tid 140621978705984] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Fri Mar 12 19:48:00.251532 2021] [core:notice] [pid 15:tid 140621978705984] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Fri Mar 12 23:59:42.575733 2021] [core:warn] [pid 15:tid 139963398721600] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Mar 12 23:59:42.576454 2021] [mpm_event:notice] [pid 15:tid 139963398721600] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Fri Mar 12 23:59:42.576475 2021] [core:notice] [pid 15:tid 139963398721600] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Mon Mar 15 02:44:09.313557 2021] [core:warn] [pid 16:tid 140527665922112] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Mar 15 02:44:09.314346 2021] [mpm_event:notice] [pid 16:tid 140527665922112] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Mon Mar 15 02:44:09.314362 2021] [core:notice] [pid 16:tid 140527665922112] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.9. Set the 'ServerName' directive globally to suppress this message
+[Wed Mar 17 02:49:00.250609 2021] [core:warn] [pid 16:tid 139704541999168] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Mar 17 02:49:00.251297 2021] [mpm_event:notice] [pid 16:tid 139704541999168] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Wed Mar 17 02:49:00.251315 2021] [core:notice] [pid 16:tid 139704541999168] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sat Mar 20 04:58:26.497014 2021] [core:warn] [pid 15:tid 140430414983232] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Mar 20 04:58:26.497997 2021] [mpm_event:notice] [pid 15:tid 140430414983232] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Sat Mar 20 04:58:26.498021 2021] [core:notice] [pid 15:tid 140430414983232] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sat Mar 20 15:38:09.983008 2021] [core:warn] [pid 15:tid 140479127154752] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Mar 20 15:38:09.984386 2021] [mpm_event:notice] [pid 15:tid 140479127154752] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Sat Mar 20 15:38:09.984429 2021] [core:notice] [pid 15:tid 140479127154752] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sat Mar 20 20:25:33.767668 2021] [core:warn] [pid 15:tid 139938277683264] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Mar 20 20:25:33.768227 2021] [mpm_event:notice] [pid 15:tid 139938277683264] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Sat Mar 20 20:25:33.768244 2021] [core:notice] [pid 15:tid 139938277683264] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sat Mar 20 23:27:13.936100 2021] [core:warn] [pid 15:tid 139838248669248] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Mar 20 23:27:13.936732 2021] [mpm_event:notice] [pid 15:tid 139838248669248] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Sat Mar 20 23:27:13.936754 2021] [core:notice] [pid 15:tid 139838248669248] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Sun Mar 21 01:19:00.733498 2021] [proxy_fcgi:error] [pid 17:tid 139838131160832] [client 172.17.0.1:34562] AH01071: Got error 'Primary script unknown'
+[Sun Mar 21 01:49:59.893495 2021] [proxy_fcgi:error] [pid 16:tid 139838019856128] [client 172.17.0.1:51000] AH01071: Got error 'Primary script unknown'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sun Mar 21 02:10:07.943803 2021] [core:warn] [pid 16:tid 140587807830080] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Mar 21 02:10:07.945864 2021] [mpm_event:notice] [pid 16:tid 140587807830080] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Sun Mar 21 02:10:07.945924 2021] [core:notice] [pid 16:tid 140587807830080] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Sun Mar 21 02:46:44.090635 2021] [proxy_fcgi:error] [pid 18:tid 140587458012928] [client 172.17.0.1:40384] AH01071: Got error 'Primary script unknown'

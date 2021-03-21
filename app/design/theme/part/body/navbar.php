@@ -18,10 +18,12 @@
             <i class="fas fa-search"></i>
         </button>
         <!-- modal buscar-->
-        <div id="form_buscar" class="modal_amesh_buscar">
-            <form action="./buscar">
+        <div id="form_buscar" class="modal_amesh_buscar" itemscope itemtype=”http://schema.org/WebSite”>
+            <meta itemprop=”url” content=”https://www.ejemplo.com/”/>
+            <form action="./buscar" itemprop=”potentialAction” itemscope itemtype=”http://schema.org/SearchAction”>
                 <div class="box-content">
-                    <input type="text" name="search" id="search_by" class="form-control pd-3" autocorrect="on">
+                    <meta itemprop=”target” content=”https://query.ejemplo.com/search?q={search_term_string}”/>
+                    <input itemprop=”query-input” type="text" name="search_term_string" id="search_by" class="form-control pd-3" autocorrect="on">
                     <button type="submit" class="btn_search">
                         <i class="fas fa-search"></i>
                     </button>

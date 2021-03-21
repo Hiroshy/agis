@@ -58,4 +58,38 @@
             }
         endif;
     }
+
+    class WebSite {
+
+        public $nameDeal;
+        public $IconWeb;
+        public $IconPhone;
+        public $Brand;
+        public $typeOfDeal;
+
+        public function __construct() {
+            $this->var = $var;
+        }
+        // Setter
+        public function set_NameWeb(){
+            return $web;
+        }
+        public function set_Icons(){
+            return $web;
+        }
+        public function set_Description(){
+            return $web;
+        }
+        public function set_typeOfDeal(){
+            return $web;
+        }
+        
+    }
+
+    class meta extends WebSite{
+        public function __construct(){
+
+        }
+    }
+    include("functions.php");
 ?>
