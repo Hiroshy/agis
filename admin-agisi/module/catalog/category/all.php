@@ -1,6 +1,15 @@
 <?php 
+    include_once("../../../model/bd.php");
     include_once("../../../controller/info-page.php");
     include_once("../../../model/store_info.class.php");
+
+    /** MODEL */
+    include_once(__DIR__."/Model/Category.php");
+    $new_category = new Category();
+    $categorias=$new_category->consultar()
+    /** CONTROLLER */
+
+    /** HELPERS */
 ?>
 <!DOCTYPE html>
     <html lang="<?= $app['lenguage']; ?>">
@@ -12,8 +21,8 @@
          <link href="../../../assets/css/vendor/dataTables.bootstrap4.css" rel="stylesheet" type="text/css" />
         <link href="../../../assets/css/vendor/responsive.bootstrap4.css" rel="stylesheet" type="text/css" />
         <link href="../../../assets/css/vendor/buttons.bootstrap4.css" rel="stylesheet" type="text/css" />
-        <link href="../../../assets/css/vendor/select.bootstrap4.css" rel="stylesheet" type="text/css" />
-        <!-- third party css end -->
+        <!--  <link href="../../../assets/css/vendor/select.bootstrap4.css" rel="stylesheet" type="text/css" />
+        third party css end -->
         <!-- App css -->
         <?php include_once("../../../part/header/meta_head.php") ?>
     </head>
@@ -70,36 +79,28 @@
                                 <table id="basic-datatable" class="table dt-responsive nowrap w-100">
                                     <thead>
                                         <tr>
+                                            <th>Imagen</th>
                                             <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
-                                            <th>Salary</th>
+                                            <th>SKU</th>
+                                            <th>Descripción corta</th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </thead>
 
 
                                     <tbody>
+                                    <?php foreach($categorias as $categoria): ?>
                                         <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
-                                            <td>61</td>
+                                            <td>IMAGEN</td>
+                                            <td><?= $categoria['category']; ?></td>
+                                            <td><?= $categoria['sku']; ?></td>
+                                            <td><?= $categoria['short_description']; ?></td>
+                                            <td>
+                                                <a href="edit/<?= $categoria['id'];?>">editar</a>
+                                                <a href="?id=<?= $categoria['id'];?>">eliminar</a>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>63</td>
-                                            <td>2011/07/25</td>
-                                            <td>$170,750</td>
-                                            <td>61</td>
-                                        </tr>
+                                    <?php endforeach; ?>
                                     </tbody>
                                 </table>
                             </div>
@@ -111,6 +112,17 @@
 
                 <!-- Footer Start -->
                 <?php include_once("../../../part/body/footer.php") ?>
+
+                <?php
+                    if(isset($_GET['id'])){
+                        $registro=[
+                            'where'=>'id',
+                            'id'=>$_GET['id']
+                        ]; 
+                        echo $new_category->eliminar($registro);
+                    }
+                ?>
+
                 <!-- end Footer -->
 
             </div>
@@ -142,8 +154,8 @@
         <script src="//<?=$app['web_url_secure'].$app['base_url_admin']?>assets/js/vendor/buttons.flash.min.js"></script>
         <script src="//<?=$app['web_url_secure'].$app['base_url_admin']?>assets/js/vendor/buttons.print.min.js"></script>
         <script src="//<?=$app['web_url_secure'].$app['base_url_admin']?>assets/js/vendor/dataTables.keyTable.min.js"></script>
-        <script src="//<?=$app['web_url_secure'].$app['base_url_admin']?>assets/js/vendor/dataTables.select.min.js"></script>
-        <!-- third party js ends -->
+        <!-- <script src="//<?=$app['web_url_secure'].$app['base_url_admin']?>assets/js/vendor/dataTables.select.min.js"></script>
+         third party js ends -->
 
         <!-- demo app -->
         <script src="//<?=$app['web_url_secure'].$app['base_url_admin']?>assets/js/pages/demo.datatable-init.js"></script>

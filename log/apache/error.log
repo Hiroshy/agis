@@ -49,3 +49,25 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 [Sun Mar 21 02:10:07.945864 2021] [mpm_event:notice] [pid 16:tid 140587807830080] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
 [Sun Mar 21 02:10:07.945924 2021] [core:notice] [pid 16:tid 140587807830080] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
 [Sun Mar 21 02:46:44.090635 2021] [proxy_fcgi:error] [pid 18:tid 140587458012928] [client 172.17.0.1:40384] AH01071: Got error 'Primary script unknown'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sun Mar 21 19:50:51.071505 2021] [core:warn] [pid 15:tid 139868501114944] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Mar 21 19:50:51.073275 2021] [mpm_event:notice] [pid 15:tid 139868501114944] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Sun Mar 21 19:50:51.073327 2021] [core:notice] [pid 15:tid 139868501114944] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sun Mar 21 20:10:40.372040 2021] [core:warn] [pid 16:tid 139901880770624] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Mar 21 20:10:40.372800 2021] [mpm_event:notice] [pid 16:tid 139901880770624] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Sun Mar 21 20:10:40.372825 2021] [core:notice] [pid 16:tid 139901880770624] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Sun Mar 21 20:55:36.760994 2021] [proxy_fcgi:error] [pid 20:tid 139901655811840] [client 172.17.0.1:58792] AH01071: Got error 'Primary script unknown'
+[Sun Mar 21 21:14:37.006476 2021] [proxy_fcgi:error] [pid 20:tid 139901597062912] [client 172.17.0.1:35358] AH01071: Got error 'Primary script unknown'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sun Mar 21 22:53:02.110178 2021] [core:warn] [pid 15:tid 139804363620416] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Mar 21 22:53:02.111322 2021] [mpm_event:notice] [pid 15:tid 139804363620416] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Sun Mar 21 22:53:02.111353 2021] [core:notice] [pid 15:tid 139804363620416] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Mon Mar 22 02:37:02.121317 2021] [core:warn] [pid 15:tid 139782978605120] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Mar 22 02:37:02.122978 2021] [mpm_event:notice] [pid 15:tid 139782978605120] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Mon Mar 22 02:37:02.123024 2021] [core:notice] [pid 15:tid 139782978605120] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Mon Mar 22 04:38:08.014929 2021] [proxy_fcgi:error] [pid 16:tid 139782764082944] [client 172.17.0.1:43060] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Mon Mar 22 04:38:22.969674 2021] [proxy_fcgi:error] [pid 16:tid 139782722119424] [client 172.17.0.1:43086] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all?delete=1
+[Mon Mar 22 04:48:24.647191 2021] [proxy_fcgi:error] [pid 16:tid 139782688548608] [client 172.17.0.1:43324] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all?id=1
+[Mon Mar 22 05:03:47.168305 2021] [proxy_fcgi:error] [pid 17:tid 139782629799680] [client 172.17.0.1:44808] AH01071: Got error 'Primary script unknown'

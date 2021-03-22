@@ -1,6 +1,14 @@
 <?php 
+    include_once("../../../model/bd.php");
     include_once("../../../controller/info-page.php");
     include_once("../../../model/store_info.class.php");
+
+    /** MODEL */
+    include_once(__DIR__."/Model/Category.php");
+    $new_category = new Category();
+    /** CONTROLLER */
+
+    /** HELPERS */
 ?>
 <!DOCTYPE html>
     <html lang="<?= $app['lenguage']; ?>">
@@ -41,8 +49,8 @@
                                 <form action="<?= $_SERVER['PHP_SELF'] ?>" class="p-3" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews" data-upload-preview-template="#uploadPreviewTemplate">
 
                                     <div class="form-check form-switch pb-2">
-                                        <input class="form-check-input" type="checkbox" id="activeProduct" name="activeProduct">
-                                        <label class="form-check-label" for="activeProduct">Habilitar Categoria</label>
+                                        <input class="form-check-input" type="checkbox" id="activeCategoria" name="activeCategoria">
+                                        <label class="form-check-label" for="activeCategoria">Habilitar Categoria</label>
                                     </div>
 
                                     <div class="form-group">
@@ -73,7 +81,7 @@
                                                 data-parent="#custom-accordion-one">
                                                 <div class="card-body p-0">
                                                    <!-- HTML-->
-                                                   <input type="hidden" name="content_product" id="content_product" class="form-control"/>
+                                                   <input type="hidden" name="description" id="content_product" class="form-control"/>
                                                     <div id="summernote-basic"></div>
                                                 </div>
                                             </div>
@@ -169,40 +177,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- <div class="card mb-0">
-                                            <div class="card-header card-header-px-0" id="headingSeven">
-                                                <h5 class="m-0">
-                                                    <a class="custom-accordion-title collapsed d-block py-1"
-                                                        data-toggle="collapse" href="#collapseSeven"
-                                                        aria-expanded="false" aria-controls="collapseSeven">
-                                                        Artículos relacionados, ventas mejoradas y ventas cruzadas  <i
-                                                            class="mdi mdi-chevron-down accordion-arrow"></i>
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseSeven" class="collapse"
-                                                aria-labelledby="headingSeven"
-                                                data-parent="#custom-accordion-one">
-                                                <div class="card-body">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" name="url" placeholder="Buscar">
-                                                    </div>
-                                                    <div id="result_product_relational">
-                                                        <div class="row">
-                                                        <?php for($i=0;$i<=10;$i++):?>
-                                                            <div class="col-md-6 py-3 dflex_center">
-                                                                <input type="checkbox" class="form-check-input" name="result_product_relational_<?=$i;?>" id="result_search_<?=$i;?>" value="<?= $id; ?>">
-                                                                <label for="result_search_<?=$i;?>" class="label_result_product">
-                                                                    <img src="/app/design/theme/assets/media/productos/producto_prueba.jpg" class="img-fluid image_result" alt="POLOS CUSTOMIZADOS">
-                                                                    Polos Customizados
-                                                                </label>
-                                                        </div>
-                                                        <?php endfor; ?>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
                                         <div class="form-group p-3">
                                             <div class="row">
                                                 <button type="submit" name="createProduct" class="btn btn-primary">Guardar</button>
@@ -215,20 +189,16 @@
                                 <?php
                                     if ($_POST) {
                                         $data=[
-                                            "active"=>$_POST['activeProduct'],
-                                            "product"=>$_POST['productName'],
-                                            "id_Categoria"=>$_POST['id_Categoria'],
-                                            "price"=>$_POST['productPrice'],
-                                            "quantity"=>$_POST['productStock'],
-                                            "sku"=>$_POST['productSku'],
+                                            "active"=>$_POST['activeCategoria'],
+                                            "category"=>$_POST['categoria'],
                                             "short_description"=>$_POST['short_description'],
-                                            "description"=>$_POST['content_product'],
-                                            "metaUrl"=>$_POST['metaUrl'],
-                                            "metaTitle"=>$_POST['metaTitle'],
-                                            "metaKeyword"=>$_POST['metaKeyword'],
-                                            "metaDescription"=>$_POST['metaDescription']
+                                            "description"=>$_POST['description'],
+                                            "slug"=>$_POST['metaUrl'],
+                                            "meta_title"=>$_POST['metaTitle'],
+                                            "meta_keywords"=>$_POST['metaKeyword'],  
+                                            "meta_description"=>$_POST['metaDescription']
                                         ];
-                                        print_r($new_product->insertar($data));
+                                        echo $new_category->insertar($data);
                                     }
                                 ?>
                             </div>

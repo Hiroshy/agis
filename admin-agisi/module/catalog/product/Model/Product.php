@@ -8,11 +8,11 @@
         }
 
         public function insertar($data) {
-            print_r(parent::conectar());
+            $conexion=parent::conectar();
             try {
-                return $query="INSERT INTO {$this->table} SET active='on' ";
+                $query="INSERT INTO {$this->table} (active) VALUES ('on') ";
                 #Prepare
-                $insertar = $conexion->prepare($query)->execute($data);
+                return $insertar = $conexion->prepare($query)->execute($data);
             } catch (Exception $e) {
                 exit("Error : ".$e->getMessage());
             }
@@ -27,4 +27,5 @@
         }
 
     }
+    
 ?>

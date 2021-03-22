@@ -24980,3 +24980,206 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /var/www/html/admin-agisi/module/catalog/category/new.php on line 231
+[21-Mar-2021 13:51:43 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function insertar() on null in /var/www/html/admin-agisi/module/catalog/category/new.php:231
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/new.php on line 231
+[21-Mar-2021 14:06:47 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Product' not found in /var/www/html/admin-agisi/module/catalog/product/all.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/product/all.php on line 8
+[21-Mar-2021 14:06:53 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Product' not found in /var/www/html/admin-agisi/module/catalog/product/all.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/product/all.php on line 8
+[21-Mar-2021 14:07:06 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Product' not found in /var/www/html/admin-agisi/module/catalog/product/all.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/product/all.php on line 8
+[21-Mar-2021 14:07:08 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Product' not found in /var/www/html/admin-agisi/module/catalog/product/all.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/product/all.php on line 8
+[21-Mar-2021 14:07:09 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'Product' not found in /var/www/html/admin-agisi/module/catalog/product/all.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/product/all.php on line 8
+[21-Mar-2021 14:10:37 America/Mexico_City] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /var/www/html/admin-agisi/module/catalog/product/new.php:63
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/product/new.php on line 63
+[21-Mar-2021 14:11:14 America/Mexico_City] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /var/www/html/admin-agisi/module/catalog/product/new.php:63
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/product/new.php on line 63
+[21-Mar-2021 20:25:22 UTC] PHP Parse error:  syntax error, unexpected 'const' (T_CONST) in /var/www/html/admin-agisi/module/catalog/product/new.php on line 31
+[21-Mar-2021 21:00:14 UTC] PHP Parse error:  syntax error, unexpected ';' in /var/www/html/admin-agisi/module/index.php on line 8
+[21-Mar-2021 21:00:44 UTC] PHP Parse error:  syntax error, unexpected ';' in /var/www/html/admin-agisi/module/index.php on line 22
+[21-Mar-2021 15:14:54 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function insertar() on null in /var/www/html/admin-agisi/module/catalog/product/new.php:269
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/product/new.php on line 269
+[21-Mar-2021 15:16:00 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /var/www/html/admin-agisi/module/catalog/product/Model/Product.php:15
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/product/new.php(269): Product->insertar(Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/product/Model/Product.php on line 15
+[21-Mar-2021 15:19:08 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /var/www/html/admin-agisi/module/catalog/product/Model/Product.php:15
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/product/new.php(269): Product->insertar(Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/product/Model/Product.php on line 15
+[21-Mar-2021 15:25:09 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /var/www/html/admin-agisi/module/catalog/product/Model/Product.php:15
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/product/new.php(269): Product->insertar(Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/product/Model/Product.php on line 15
+[21-Mar-2021 15:25:28 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /var/www/html/admin-agisi/module/catalog/product/Model/Product.php:15
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/product/new.php(269): Product->insertar(Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/product/Model/Product.php on line 15
+[21-Mar-2021 15:25:34 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /var/www/html/admin-agisi/module/catalog/product/Model/Product.php:15
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/product/new.php(269): Product->insertar(Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/product/Model/Product.php on line 15
+[21-Mar-2021 15:26:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /var/www/html/admin-agisi/module/catalog/product/Model/Product.php:15
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/product/new.php(269): Product->insertar(Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/product/Model/Product.php on line 15
+[22-Mar-2021 03:39:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function iinclude_once() in /var/www/html/admin-agisi/module/catalog/category/all.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/all.php on line 2
+[21-Mar-2021 23:03:22 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(13): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:03:36 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(13): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:05:07 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(13): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:05:37 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(13): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:32:11 America/Mexico_City] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 28
+[21-Mar-2021 23:32:11 America/Mexico_City] PHP Stack trace:
+[21-Mar-2021 23:32:11 America/Mexico_City] PHP   1. {main}() /var/www/html/admin-agisi/module/catalog/category/edit.php:0
+[21-Mar-2021 23:32:11 America/Mexico_City] PHP   2. Category->consultar() /var/www/html/admin-agisi/module/catalog/category/edit.php:12
+[21-Mar-2021 23:32:11 America/Mexico_City] PHP   3. implode() /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:28
+[21-Mar-2021 23:32:11 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(12): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:33:05 America/Mexico_City] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 28
+[21-Mar-2021 23:33:05 America/Mexico_City] PHP Stack trace:
+[21-Mar-2021 23:33:05 America/Mexico_City] PHP   1. {main}() /var/www/html/admin-agisi/module/catalog/category/edit.php:0
+[21-Mar-2021 23:33:05 America/Mexico_City] PHP   2. Category->consultar() /var/www/html/admin-agisi/module/catalog/category/edit.php:12
+[21-Mar-2021 23:33:05 America/Mexico_City] PHP   3. implode() /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:28
+[21-Mar-2021 23:33:05 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(12): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:33:33 America/Mexico_City] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 28
+[21-Mar-2021 23:33:33 America/Mexico_City] PHP Stack trace:
+[21-Mar-2021 23:33:33 America/Mexico_City] PHP   1. {main}() /var/www/html/admin-agisi/module/catalog/category/edit.php:0
+[21-Mar-2021 23:33:33 America/Mexico_City] PHP   2. Category->consultar() /var/www/html/admin-agisi/module/catalog/category/edit.php:12
+[21-Mar-2021 23:33:33 America/Mexico_City] PHP   3. implode() /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:28
+[21-Mar-2021 23:33:33 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(12): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:33:46 America/Mexico_City] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 28
+[21-Mar-2021 23:33:46 America/Mexico_City] PHP Stack trace:
+[21-Mar-2021 23:33:46 America/Mexico_City] PHP   1. {main}() /var/www/html/admin-agisi/module/catalog/category/edit.php:0
+[21-Mar-2021 23:33:46 America/Mexico_City] PHP   2. Category->consultar() /var/www/html/admin-agisi/module/catalog/category/edit.php:12
+[21-Mar-2021 23:33:46 America/Mexico_City] PHP   3. implode() /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:28
+[21-Mar-2021 23:33:46 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(12): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:34:36 America/Mexico_City] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 28
+[21-Mar-2021 23:34:36 America/Mexico_City] PHP Stack trace:
+[21-Mar-2021 23:34:36 America/Mexico_City] PHP   1. {main}() /var/www/html/admin-agisi/module/catalog/category/edit.php:0
+[21-Mar-2021 23:34:36 America/Mexico_City] PHP   2. Category->consultar() /var/www/html/admin-agisi/module/catalog/category/edit.php:12
+[21-Mar-2021 23:34:36 America/Mexico_City] PHP   3. implode() /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:28
+[21-Mar-2021 23:34:36 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(12): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:34:42 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(12): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:34:57 America/Mexico_City] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 28
+[21-Mar-2021 23:34:57 America/Mexico_City] PHP Stack trace:
+[21-Mar-2021 23:34:57 America/Mexico_City] PHP   1. {main}() /var/www/html/admin-agisi/module/catalog/category/edit.php:0
+[21-Mar-2021 23:34:57 America/Mexico_City] PHP   2. Category->consultar() /var/www/html/admin-agisi/module/catalog/category/edit.php:12
+[21-Mar-2021 23:34:57 America/Mexico_City] PHP   3. implode() /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:28
+[21-Mar-2021 23:34:57 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(12): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:35:05 America/Mexico_City] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 28
+[21-Mar-2021 23:35:05 America/Mexico_City] PHP Stack trace:
+[21-Mar-2021 23:35:05 America/Mexico_City] PHP   1. {main}() /var/www/html/admin-agisi/module/catalog/category/edit.php:0
+[21-Mar-2021 23:35:05 America/Mexico_City] PHP   2. Category->consultar() /var/www/html/admin-agisi/module/catalog/category/edit.php:12
+[21-Mar-2021 23:35:05 America/Mexico_City] PHP   3. implode() /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:28
+[21-Mar-2021 23:35:05 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(12): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:35:10 America/Mexico_City] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 28
+[21-Mar-2021 23:35:10 America/Mexico_City] PHP Stack trace:
+[21-Mar-2021 23:35:10 America/Mexico_City] PHP   1. {main}() /var/www/html/admin-agisi/module/catalog/category/edit.php:0
+[21-Mar-2021 23:35:10 America/Mexico_City] PHP   2. Category->consultar() /var/www/html/admin-agisi/module/catalog/category/edit.php:12
+[21-Mar-2021 23:35:10 America/Mexico_City] PHP   3. implode() /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:28
+[21-Mar-2021 23:35:10 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(12): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:35:51 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(12): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:36:38 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(12): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:37:03 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(12): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:37:55 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(12): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33
+[21-Mar-2021 23:38:06 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php:33
+Stack trace:
+#0 /var/www/html/admin-agisi/module/catalog/category/edit.php(12): Category->consultar(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/admin-agisi/module/catalog/category/Model/Category.php on line 33

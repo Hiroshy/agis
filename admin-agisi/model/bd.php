@@ -26,11 +26,10 @@
         
         public function conectar(){
             try{
-                $str=DB_TYPE.":host=".self::$db_servidor.";dbname=".self::$db_nombre;
-                $pdo= new PDO($str,self::$db_usuario,self::$db_pass);
-                $pdo->exec("SET CHARSET SET".self::$db_charset);
+                $pdo= new PDO("mysql:host=172.17.0.1;dbname=dash_database","root","mysql");
+                $pdo->exec("SET CHARSET SET utf8");
                 $pdo->query("SET NAMES 'utf8'");
-                print_r($pdo);
+                return ($pdo);
             }catch(PDOException $e){
                 exit("Error: ".$e->getMessage());
             }
