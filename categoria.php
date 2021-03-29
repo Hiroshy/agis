@@ -24,20 +24,6 @@
         <?php include('app/design/theme/part/body/categoria.php');?>
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-5 align-self-center">
-                <p class="h2">Lo mejor de Chalecos</p>
-                <div class="mx-auto">
-                    <p class="muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, illo officiis recusandae commodi nemo necessitatibus, deleniti dolorum dicta veritatis eum similique! Illum sapiente ipsa dolore voluptate aspernatur ducimus dolorem distinctio!</p>
-                </div>
-            </div>
-            <div class="col-md-7">
-                <?php include('app/design/theme/part/body/categoria.php');?>
-            </div>
-        </div>
-    </div>
-
     <?php include('app/design/theme/part/body/promocion.php');?>    
     <?php include('app/design/theme/part/body/contacta.php'); ?>
     <?php include('app/design/theme/part/body/banner.php'); ?>

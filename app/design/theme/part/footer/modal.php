@@ -73,8 +73,8 @@
                 </ul>
             </div>
 
-            <img src="app/design/theme/assets/media/others/escudo_jerusalem.png" class="img-fluid emblema_jerusalem" alt="escudo jerusalem agis" />
-            <img src="app/design/theme/assets/media/others/peru_logo.png" class="img-fluid emblema_peru" alt="escudo jerusalem agis" />
+            <img src="/app/design/theme/assets/media/others/escudo_jerusalem.png" class="img-fluid emblema_jerusalem" alt="escudo jerusalem agis" />
+            <img src="/app/design/theme/assets/media/others/peru_logo.png" class="img-fluid emblema_peru" alt="escudo jerusalem agis" />
             <div class="form-group box-bottom">
                 <button class="btn btn-danger close_btn">Cerrar</button>
             </div>

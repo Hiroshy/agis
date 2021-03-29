@@ -1,20 +1,26 @@
-<div id="categorias" class="container-fluid py-5">
+<div id="categorias" class="container-fluid pt-3 pb-5">
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <?php for($i=1;$i<=6;$i=$i+1): ?>
+            <?php foreach ($productos as $producto):?>
                 <div class="swiper-slide flex-column">
                     <div class="box_category_father mb-2">
-                        <img src="app/design/theme/assets/media/productos/producto_prueba.jpg" class="img-fluid mx-0" alt="...">
+                        <img src="/admin-agisi/assets/images/products/<?= json_decode($producto['image'])[0]; ?>" class="img-fluid mx-0" alt="<?= json_decode($producto['image'])[0]; ?>">
                         <div class="box_category_content flex-column">
-                            <h1 class="title__cool">Producto <?= $i; ?></h1>
-                            <p class="muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt corporis eligendi beatae, provident eius dolores quaerat neque rem ipsa illo dignissimos iure consequatur, dolorum corrupti assumenda, exercitationem inventore sit aspernatur.</p>
+                            <a href="producto/<?= $category->consultar(['slug'],['id ='=>"$producto[id_Categoria]"])[0]['slug']; ?>/<?= $producto['meta_URL']; ?>" class="text-light">
+                                <h1 class="title__cool"><?= $producto['product'] ?></h1>
+                            </a>
+                            <p class="muted">
+                                <?= $producto['short_description'] ;?>
+                            </p>
                         </div>
                     </div>
                     <div class="form-group">
-                        <p class="lead mb-0">Producto <?= $i; ?></p>
-                        <p class="muted">$  250.0<?= $i; ?></p>
+                        <a href="#">
+                            <p class="lead mb-0"> <?= $producto['product'] ?> </p>
+                        </a>
+                        <p class="muted">$ <?= number_format($producto['price'], 2, ',', ' ');?> </p>
                     </div>
-                    <div itemtype="http://schema.org/Course" itemscope>
+                    <div itemtype="http://schema.org/Product" itemscope>
                         <meta itemprop="mpn" content="inteligencia-emocional" />
                         <meta itemprop="name" content="Executive Anvil" />
                         <link itemprop="image" href="/assets/media/producto/6. TIE.png" />
@@ -44,7 +50,7 @@
                         </div>
                     </div>
                 </div>
-            <?php endfor; ?>
+            <?php endforeach; ?>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>

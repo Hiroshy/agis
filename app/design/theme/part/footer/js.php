@@ -156,3 +156,11 @@
       "acceptsReservations": "True"
     }
     </script>
+
+    <script>
+        let itemCarousel=Array.from(document.querySelectorAll(".carousel-inner"))
+        for (let index = 0; index < itemCarousel.length; index++) {
+          //console.log(itemCarousel)
+          console.log(itemCarousel[index].firstElementChild.classList.add("active"))
+        }
+    </script>

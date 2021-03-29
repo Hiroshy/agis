@@ -30,6 +30,8 @@
                     $query= "SELECT {$cadena} FROM {$this->table}";
                 }
 
+                //return $query;
+
                 $querySend=$conexion->query($query)->fetchAll();
                 return $querySend;
             } catch (Exception $e) {
@@ -40,7 +42,7 @@
         public function insertar($data) {
             $conexion=parent::conectar();
             try {
-                return $query="INSERT INTO {$this->table} (active,category,short_description,description,slug,meta_title,meta_keywords,meta_description) VALUES ('$data[active]','$data[category]','$data[short_description]','$data[description]','$data[slug]','$data[meta_title]','$data[meta_keywords]','$data[meta_description]')";
+                $query="INSERT INTO {$this->table} (active,category,short_description,description,slug,meta_title,meta_keywords,meta_description,image) VALUES ('$data[active]','$data[category]','$data[short_description]','$data[description]','$data[slug]','$data[meta_title]','$data[meta_keywords]','$data[meta_description]','$data[image]')";
                 #Prepare
                 $insertar = $conexion->prepare($query)->execute();
                 if($insertar==1){
@@ -56,7 +58,13 @@
 
         function actualizar($data) {
             $conexion = parent::conectar();
-            $query="UPDATE {$this->table} SET active='$data[active]',category='$data[category]',short_description='$data[short_description]',description='$data[description]',slug='$data[slug]',meta_title='$data[meta_title]',meta_keywords='$data[meta_keywords]',meta_description='$data[meta_description]' WHERE id= $data[id]";
+            $query="UPDATE {$this->table} SET active='$data[active]',category='$data[category]',short_description='$data[short_description]',description='$data[description]',slug='$data[slug]',meta_title='$data[meta_title]',meta_keywords='$data[meta_keywords]',meta_description='$data[meta_description]'";
+            if (isset($data['image'])) {
+                $query.=",image='$data[image]'";
+            }
+            $query.=" WHERE id= $data[id]";
+
+            //return $query;
             #Prepare
             $insertar = $conexion->prepare($query)->execute($data);
             if($insertar==1){
@@ -82,6 +90,13 @@
             } catch (Exception $e) {
                 exit("Error:".$e->getMessage());
             }
+        }
+
+        function getCategory($lug)
+        {
+            $query = "SELECT 'category' FROM {$this->table} WHERE slug = '{$lug}';";
+            $querySend = $conexion->query($query)->fetchAll();
+            return $querySend;
         }
     }
 ?>

@@ -1,8 +1,8 @@
 <div id="promocion" class="container-fluid px-0">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="app/design/theme/assets/media/carousel/promocion_agis.jpg" src="app/design/theme/assets/media/carousel/promocion_agis.jpg 1024w,/assets/media/carousel/promocion_agis_mobile.jpg 900w" class="d-block w-100" alt="...">
+          <div class="carousel-item">
+            <img src="/app/design/theme/assets/media/carousel/promocion_agis.jpg" src="app/design/theme/assets/media/carousel/promocion_agis.jpg 1024w,/assets/media/carousel/promocion_agis_mobile.jpg 900w" class="d-block w-100" alt="...">
             <div class="carousel-caption promo d-md-block p-3">
               <div class="text-left">
                 <p class="h2">Gran promoción de Septiembre</p>
@@ -15,8 +15,8 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item ">
-            <img src="app/design/theme/assets/media/carousel/promocion_agis.jpg" src="app/design/theme/assets/media/carousel/promocion_agis.jpg 1024w,/assets/media/carousel/promocion_agis_mobile.jpg 900w" class="d-block w-100" alt="...">
+          <div class="carousel-item">
+            <img src="/app/design/theme/assets/media/carousel/promocion_agis.jpg" src="app/design/theme/assets/media/carousel/promocion_agis.jpg 1024w,/assets/media/carousel/promocion_agis_mobile.jpg 900w" class="d-block w-100" alt="...">
             <div class="carousel-caption promo d-md-block p-3">
               <div class="text-left">
                 <p class="h2">Gran promoción de Septiembre 2</p>

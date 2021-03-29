@@ -51,21 +51,6 @@
                                 <p class="h1">Categorias</p>
                                 <ul class="list-horizontal">
                                     <li>
-                                        <button type="button" class="btn btn-light  ">
-                                            <i class="mdi mdi-filter-menu"></i> Filtros
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button type="button" class="btn btn-light  ">
-                                            <i class="mdi mdi-table-column"></i> Column
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button class="btn btn-light">
-                                            <i class="mdi mdi-file-excel-outline"></i> Exportar
-                                        </button>
-                                    </li>
-                                    <li>
                                         <div class="btn-group mb-2 dropright">
                                             <a href="new" class="btn btn-light  ">
                                                 Crear Categoria
@@ -91,7 +76,9 @@
                                     <tbody>
                                     <?php foreach($categorias as $categoria): ?>
                                         <tr>
-                                            <td>IMAGEN</td>
+                                            <td>
+                                                <img src="../../../assets/images/category/<?= $categoria['image']; ?>" alt="<?= $categoria['image']; ?>" class="img-fluid">
+                                            </td>
                                             <td><?= $categoria['category']; ?></td>
                                             <td><?= $categoria['sku']; ?></td>
                                             <td><?= $categoria['short_description']; ?></td>

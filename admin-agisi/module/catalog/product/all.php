@@ -4,8 +4,13 @@
     include_once("../../../model/store_info.class.php");
 
     /** MODEL */
+    include_once("../category/Model/Category.php");
+    $new_category = new Category();
+    $categorias=$new_category->consultar();
+
     include_once(__DIR__."/Model/Product.php");
     $new_product = new Product();
+    $new_products = $new_product->consultar();
     /** CONTROLLER */
 
     /** HELPERS */
@@ -54,36 +59,36 @@
                                 <table id="basic-datatable" class="table dt-responsive nowrap w-100">
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
-                                            <th>Salary</th>
+                                            <th>Imagen</th>
+                                            <th>Categoria</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th>SKU</th>
+                                            <th>Descripción corta</th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </thead>
 
 
                                     <tbody>
+                                    <?php foreach($new_products as $product): ?>
                                         <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
-                                            <td>61</td>
+                                            <td>
+                                                <img src="../../../assets/images/products/<?= json_decode($product['image'])[0]; ?>" alt="<?= json_decode($product['image'])[0]; ?>" class="img-fluid">
+                                            </td>
+                                            <td><?= $product['id_Categoria']; ?></td>
+                                            <td><?= $product['product']; ?></td>
+                                            <td><?= $product['price']; ?></td>
+                                            <td><?= $product['quantity']; ?></td>
+                                            <td><?= $product['sku']; ?></td>
+                                            <td><?= $product['short_description']; ?></td>
+                                            <td>
+                                                <a href="edit/<?= $product['id'];?>">editar</a>
+                                                <a href="?id=<?= $product['id'];?>">eliminar</a>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>63</td>
-                                            <td>2011/07/25</td>
-                                            <td>$170,750</td>
-                                            <td>61</td>
-                                        </tr>
+                                    <?php endforeach; ?>
                                     </tbody>
                                 </table>
                             </div>
@@ -96,6 +101,16 @@
                 <!-- Footer Start -->
                 <?php include_once("../../../part/body/footer.php") ?>
                 <!-- end Footer -->
+
+                <?php
+                    if(isset($_GET['id'])){
+                        $registro=[
+                            'where'=>'id',
+                            'id'=>$_GET['id']
+                        ]; 
+                        echo $new_product->eliminar($registro);
+                    }
+                ?>
 
             </div>
 

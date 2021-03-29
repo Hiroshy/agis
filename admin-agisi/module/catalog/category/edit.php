@@ -1,4 +1,4 @@
-<?php 
+<?php
     include_once("../../../model/bd.php");
     include_once("../../../controller/info-page.php");
     include_once("../../../model/store_info.class.php");
@@ -63,7 +63,7 @@
                                 <p class="h1">Categoria</p>
                             </div>
                             <div class="col-lg-6 mx-auto px-0">
-                                <form action="/admin-agisi/module/catalog/category/edit/<?=$_GET['id']?>" class="p-3" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews" data-upload-preview-template="#uploadPreviewTemplate">
+                                <form action="/admin-agisi/module/catalog/category/edit/<?=$_GET['id']?>" class="p-3" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews" data-upload-preview-template="#uploadPreviewTemplate" enctype="multipart/form-data">
 
                                     <div class="form-check form-switch pb-2">
                                         <input class="form-check-input" type="checkbox" id="activeCategoria" name="activeCategoria" <?= ($resultProduct['active']=='on')?'checked':''; ?>>
@@ -119,40 +119,8 @@
                                                 data-parent="#custom-accordion-one">
                                                 <div class="card-body">
                                                     
-                                                    <div class="fallback">
-                                                        <input name="file" type="file" multiple />
-                                                    </div>
-
-                                                    <div class="dz-message needsclick">
-                                                        <i class="h1 text-muted dripicons-cloud-upload"></i>
-                                                        <h3>Arrastra y suelta</h3>
-                                                        <span class="text-muted font-13">(This is just a demo dropzone. Selected files are
-                                                            <strong>not</strong> actually uploaded.)</span>
-                                                    </div>
-                                                    <!-- Preview -->
-                                                    <div class="dropzone-previews mt-3" id="file-previews"></div>
-
-                                                    <!-- file preview template -->
-                                                    <div class="d-none" id="uploadPreviewTemplate">
-                                                        <div class="card mt-1 mb-0 shadow-none border">
-                                                            <div class="p-2">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <img data-dz-thumbnail src="#" class="avatar-sm rounded bg-light" alt="">
-                                                                    </div>
-                                                                    <div class="col pl-0">
-                                                                        <a href="javascript:void(0);" class="text-muted font-weight-bold" data-dz-name></a>
-                                                                        <p class="mb-0" data-dz-size></p>
-                                                                    </div>
-                                                                    <div class="col-auto">
-                                                                        <!-- Button -->
-                                                                        <a href="" class="btn btn-link btn-lg text-muted" data-dz-remove>
-                                                                            <i class="dripicons-cross"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <div class="my-3">
+                                                        <input name="productos" type="file" id="formFile" require>
                                                     </div>
                                                     
                                                 </div>
@@ -205,6 +173,17 @@
 
                                 <?php
                                     if ($_POST) {
+
+                                        $ruta='../../../assets/images/category/';
+
+                                        if (strlen($_FILES['productos']['name']) > 1 ) {
+
+                                            if ((strpos($_FILES['productos']['type'], "gif") || strpos($_FILES['productos']['type'], "jpeg") || strpos($_FILES['productos']['type'], "png") )) {
+                                                move_uploaded_file($_FILES['productos']['tmp_name'], $ruta.$app['business'].'_'.$_FILES['productos']['name']);
+                                            }
+                                            
+                                        }
+
                                         $data=[
                                             "id"=>$_GET['id'],
                                             "active"=>$_POST['activeCategoria'],
@@ -215,8 +194,14 @@
                                             "meta_title"=>$_POST['metaTitle'],
                                             "meta_keywords"=>$_POST['metaKeyword'],  
                                             "meta_description"=>$_POST['metaDescription']
-                                        ];
+                                        ]; 
+
+                                        if (strlen($_FILES['productos']['name']) > 1 ) {
+                                            $data['image']=$app['business'].'_'.$_FILES['productos']['name'];
+                                        }
+
                                         echo $new_category->actualizar($data);
+
                                     }
                                 ?>
                             </div>

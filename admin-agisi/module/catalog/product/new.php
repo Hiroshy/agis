@@ -5,6 +5,10 @@
     include_once("../../../model/store_info.class.php");
 
     /** MODEL */
+    include_once("../category/Model/Category.php");
+    $new_category = new Category();
+    $categorias=$new_category->consultar();
+
     include_once(__DIR__."/Model/Product.php");
     $new_product = new Product();
     /** CONTROLLER */
@@ -49,11 +53,16 @@
                                 <p class="h1">Productos</p>
                             </div>
                             <div class="col-lg-6 mx-auto px-0">
-                                <form action="<?= $_SERVER['PHP_SELF'] ?>" class="p-3" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews" data-upload-preview-template="#uploadPreviewTemplate">
+                                <form action="<?= $_SERVER['PHP_SELF'] ?>" class="p-3" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews" data-upload-preview-template="#uploadPreviewTemplate" enctype="multipart/form-data">
 
                                     <div class="form-check form-switch pb-2">
                                         <input class="form-check-input" type="checkbox" id="activeProduct" name="activeProduct">
                                         <label class="form-check-label" for="activeProduct">Habilitar Producto</label>
+                                    </div>
+
+                                    <div class="form-check form-switch pb-2">
+                                        <input class="form-check-input" type="checkbox" id="favoriteProduct" name="favoriteProduct" value="1">
+                                        <label class="form-check-label" for="favoriteProduct">Poner en Favoritos</label>
                                     </div>
 
                                     <div class="form-group">
@@ -72,14 +81,11 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="product">SKU</label>
-                                        <input type="text" class="form-control" name="productSku">
-                                    </div>
-
-                                    <div class="form-group">
                                         <label for="categoria">Categoria</label>
                                         <select name="id_Categoria" id="categoria" class="custom-select">
-                                            <option value=""></option>
+                                            <?php foreach($categorias as $categoria): ?>
+                                                <option value="<?= $categoria['id'] ?>"> <?= $categoria['category'] ?></option>
+                                            <?php endforeach;?>
                                         </select>
                                     </div>
 
@@ -132,40 +138,8 @@
                                                 data-parent="#custom-accordion-one">
                                                 <div class="card-body">
                                                     
-                                                    <div class="fallback">
-                                                        <input name="file" type="file" multiple />
-                                                    </div>
-
-                                                    <div class="dz-message needsclick">
-                                                        <i class="h1 text-muted dripicons-cloud-upload"></i>
-                                                        <h3>Arrastra y suelta</h3>
-                                                        <span class="text-muted font-13">(This is just a demo dropzone. Selected files are
-                                                            <strong>not</strong> actually uploaded.)</span>
-                                                    </div>
-                                                    <!-- Preview -->
-                                                    <div class="dropzone-previews mt-3" id="file-previews"></div>
-
-                                                    <!-- file preview template -->
-                                                    <div class="d-none" id="uploadPreviewTemplate">
-                                                        <div class="card mt-1 mb-0 shadow-none border">
-                                                            <div class="p-2">
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-auto">
-                                                                        <img data-dz-thumbnail src="#" class="avatar-sm rounded bg-light" alt="">
-                                                                    </div>
-                                                                    <div class="col pl-0">
-                                                                        <a href="javascript:void(0);" class="text-muted font-weight-bold" data-dz-name></a>
-                                                                        <p class="mb-0" data-dz-size></p>
-                                                                    </div>
-                                                                    <div class="col-auto">
-                                                                        <!-- Button -->
-                                                                        <a href="" class="btn btn-link btn-lg text-muted" data-dz-remove>
-                                                                            <i class="dripicons-cross"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <div class="my-3">
+                                                        <input name="productos[]" type="file" id="formFile" multiple require>
                                                     </div>
                                                     
                                                 </div>
@@ -207,40 +181,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- <div class="card mb-0">
-                                            <div class="card-header card-header-px-0" id="headingSeven">
-                                                <h5 class="m-0">
-                                                    <a class="custom-accordion-title collapsed d-block py-1"
-                                                        data-toggle="collapse" href="#collapseSeven"
-                                                        aria-expanded="false" aria-controls="collapseSeven">
-                                                        Artículos relacionados, ventas mejoradas y ventas cruzadas  <i
-                                                            class="mdi mdi-chevron-down accordion-arrow"></i>
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseSeven" class="collapse"
-                                                aria-labelledby="headingSeven"
-                                                data-parent="#custom-accordion-one">
-                                                <div class="card-body">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" name="url" placeholder="Buscar">
-                                                    </div>
-                                                    <div id="result_product_relational">
-                                                        <div class="row">
-                                                        <?php for($i=0;$i<=10;$i++):?>
-                                                            <div class="col-md-6 py-3 dflex_center">
-                                                                <input type="checkbox" class="form-check-input" name="result_product_relational_<?=$i;?>" id="result_search_<?=$i;?>" value="<?= $id; ?>">
-                                                                <label for="result_search_<?=$i;?>" class="label_result_product">
-                                                                    <img src="/app/design/theme/assets/media/productos/producto_prueba.jpg" class="img-fluid image_result" alt="POLOS CUSTOMIZADOS">
-                                                                    Polos Customizados
-                                                                </label>
-                                                        </div>
-                                                        <?php endfor; ?>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
                                         <div class="form-group p-3">
                                             <div class="row">
                                                 <button type="submit" name="createProduct" class="btn btn-primary">Guardar</button>
@@ -252,8 +192,20 @@
 
                                 <?php
                                     if ($_POST) {
+                                        $ruta='../../../assets/images/products/';
+                                        
+                                        $imagenes=[]; 
+
+                                        for ($i=0; $i< count($_FILES["productos"]["tmp_name"]); $i++){
+                                            if ((strpos($_FILES['productos']['type'][$i], "gif") || strpos($_FILES['productos']['type'][$i], "jpeg") || strpos($_FILES['productos']['type'][$i], "png") )) {
+                                              move_uploaded_file($_FILES['productos']['tmp_name'][$i], $ruta.$app['business'].'_'.$_FILES['productos']['name'][$i]);
+                                              array_push($imagenes,$app['business'].'_'.$_FILES['productos']['name'][$i]);
+                                            }
+                                        } 
+
                                         $data=[
                                             "active"=>$_POST['activeProduct'],
+                                            "favorite"=>$_POST['favoriteProduct'],
                                             "product"=>$_POST['productName'],
                                             "id_Categoria"=>$_POST['id_Categoria'],
                                             "price"=>$_POST['productPrice'],
@@ -261,11 +213,13 @@
                                             "sku"=>$_POST['productSku'],
                                             "short_description"=>$_POST['short_description'],
                                             "description"=>$_POST['content_product'],
+                                            "image"=>json_encode($imagenes),
                                             "metaUrl"=>$_POST['metaUrl'],
                                             "metaTitle"=>$_POST['metaTitle'],
                                             "metaKeyword"=>$_POST['metaKeyword'],
                                             "metaDescription"=>$_POST['metaDescription']
                                         ];
+
                                         print_r($new_product->insertar($data));
                                     }
                                 ?>

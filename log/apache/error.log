@@ -71,3 +71,63 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 [Mon Mar 22 04:38:22.969674 2021] [proxy_fcgi:error] [pid 16:tid 139782722119424] [client 172.17.0.1:43086] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all?delete=1
 [Mon Mar 22 04:48:24.647191 2021] [proxy_fcgi:error] [pid 16:tid 139782688548608] [client 172.17.0.1:43324] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all?id=1
 [Mon Mar 22 05:03:47.168305 2021] [proxy_fcgi:error] [pid 17:tid 139782629799680] [client 172.17.0.1:44808] AH01071: Got error 'Primary script unknown'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.7. Set the 'ServerName' directive globally to suppress this message
+[Tue Mar 23 05:23:47.272653 2021] [core:warn] [pid 15:tid 140464653426752] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Mar 23 05:23:47.273481 2021] [mpm_event:notice] [pid 15:tid 140464653426752] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Mar 23 05:23:47.273517 2021] [core:notice] [pid 15:tid 140464653426752] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Tue Mar 23 05:26:27.387490 2021] [proxy_fcgi:error] [pid 19:tid 140464455923456] [client 172.17.0.1:43350] AH01071: Got error 'Primary script unknown'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sat Mar 27 19:57:26.496550 2021] [core:warn] [pid 15:tid 140517322707008] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Mar 27 19:57:26.497539 2021] [mpm_event:notice] [pid 15:tid 140517322707008] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Sat Mar 27 19:57:26.497561 2021] [core:notice] [pid 15:tid 140517322707008] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Sat Mar 27 22:40:35.961424 2021] [proxy_fcgi:error] [pid 17:tid 140517077665536] [client 172.17.0.1:34606] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:40:36.271165 2021] [proxy_fcgi:error] [pid 17:tid 140517044094720] [client 172.17.0.1:34610] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:41:34.763388 2021] [proxy_fcgi:error] [pid 17:tid 140517035702016] [client 172.17.0.1:35156] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:41:35.707245 2021] [proxy_fcgi:error] [pid 16:tid 140517188413184] [client 172.17.0.1:35182] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:42:13.304151 2021] [proxy_fcgi:error] [pid 17:tid 140517230376704] [client 172.17.0.1:35684] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:42:14.144722 2021] [proxy_fcgi:error] [pid 16:tid 140517018916608] [client 172.17.0.1:35714] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:42:43.365216 2021] [proxy_fcgi:error] [pid 17:tid 140517010523904] [client 172.17.0.1:36050] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:42:44.055877 2021] [proxy_fcgi:error] [pid 17:tid 140517044094720] [client 172.17.0.1:36076] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:43:04.967325 2021] [proxy_fcgi:error] [pid 16:tid 140517230376704] [client 172.17.0.1:36346] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:43:05.727258 2021] [proxy_fcgi:error] [pid 17:tid 140517077665536] [client 172.17.0.1:36380] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:43:08.783005 2021] [proxy_fcgi:error] [pid 17:tid 140517205198592] [client 172.17.0.1:36502] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:43:09.570622 2021] [proxy_fcgi:error] [pid 17:tid 140517188413184] [client 172.17.0.1:36536] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:43:30.951033 2021] [proxy_fcgi:error] [pid 17:tid 140517035702016] [client 172.17.0.1:36804] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:43:31.671722 2021] [proxy_fcgi:error] [pid 17:tid 140517086058240] [client 172.17.0.1:36834] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:43:34.119485 2021] [proxy_fcgi:error] [pid 17:tid 140516985345792] [client 172.17.0.1:36954] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:43:34.868726 2021] [proxy_fcgi:error] [pid 17:tid 140516976953088] [client 172.17.0.1:36988] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:47:07.578872 2021] [proxy_fcgi:error] [pid 16:tid 140517188413184] [client 172.17.0.1:38822] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:47:08.324160 2021] [proxy_fcgi:error] [pid 17:tid 140517010523904] [client 172.17.0.1:38856] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:47:40.861890 2021] [proxy_fcgi:error] [pid 17:tid 140517044094720] [client 172.17.0.1:39222] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:47:41.606495 2021] [proxy_fcgi:error] [pid 16:tid 140517044094720] [client 172.17.0.1:39248] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:47:58.267581 2021] [proxy_fcgi:error] [pid 17:tid 140516985345792] [client 172.17.0.1:39484] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:47:59.230194 2021] [proxy_fcgi:error] [pid 16:tid 140517077665536] [client 172.17.0.1:39520] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:48:41.696209 2021] [proxy_fcgi:error] [pid 16:tid 140517018916608] [client 172.17.0.1:39962] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:48:42.457903 2021] [proxy_fcgi:error] [pid 17:tid 140516968560384] [client 172.17.0.1:40000] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:49:11.896023 2021] [proxy_fcgi:error] [pid 17:tid 140517027309312] [client 172.17.0.1:40336] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:49:12.607494 2021] [proxy_fcgi:error] [pid 17:tid 140517213591296] [client 172.17.0.1:40372] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:49:55.593692 2021] [proxy_fcgi:error] [pid 16:tid 140517230376704] [client 172.17.0.1:40526] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:49:55.916677 2021] [proxy_fcgi:error] [pid 17:tid 140516985345792] [client 172.17.0.1:40532] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:49:58.699797 2021] [proxy_fcgi:error] [pid 17:tid 140517205198592] [client 172.17.0.1:40550] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all?id=8
+[Sat Mar 27 22:49:58.852284 2021] [proxy_fcgi:error] [pid 17:tid 140517002131200] [client 172.17.0.1:40564] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:49:59.106226 2021] [proxy_fcgi:error] [pid 17:tid 140517052487424] [client 172.17.0.1:40570] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all
+[Sat Mar 27 22:50:00.734176 2021] [proxy_fcgi:error] [pid 17:tid 140517094450944] [client 172.17.0.1:40588] AH01071: Got error 'Primary script unknown', referer: http://agis.local/admin-agisi/module/catalog/category/all?id=9
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sun Mar 28 03:13:14.232589 2021] [core:warn] [pid 15:tid 139724350140480] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Mar 28 03:13:14.233568 2021] [mpm_event:notice] [pid 15:tid 139724350140480] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Sun Mar 28 03:13:14.233596 2021] [core:notice] [pid 15:tid 139724350140480] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sun Mar 28 18:42:34.420758 2021] [core:warn] [pid 15:tid 140223028772928] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Mar 28 18:42:34.421687 2021] [mpm_event:notice] [pid 15:tid 140223028772928] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Sun Mar 28 18:42:34.421712 2021] [core:notice] [pid 15:tid 140223028772928] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Sun Mar 28 20:29:27.368131 2021] [proxy_fcgi:error] [pid 17:tid 140222771726080] [client 172.17.0.1:42464] AH01071: Got error 'Primary script unknown'
+[Sun Mar 28 20:30:03.482823 2021] [proxy_fcgi:error] [pid 17:tid 140222729762560] [client 172.17.0.1:42538] AH01071: Got error 'Primary script unknown', referer: http://agis.local/
+[Sun Mar 28 21:03:00.713673 2021] [proxy_fcgi:error] [pid 16:tid 140222687799040] [client 172.17.0.1:45188] AH01071: Got error 'Primary script unknown'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sun Mar 28 23:22:45.130993 2021] [core:warn] [pid 15:tid 139899682140224] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Mar 28 23:22:45.131750 2021] [mpm_event:notice] [pid 15:tid 139899682140224] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Sun Mar 28 23:22:45.131769 2021] [core:notice] [pid 15:tid 139899682140224] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sun Mar 28 23:50:46.696843 2021] [core:warn] [pid 15:tid 140033358229568] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Mar 28 23:50:46.697762 2021] [mpm_event:notice] [pid 15:tid 140033358229568] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Sun Mar 28 23:50:46.697790 2021] [core:notice] [pid 15:tid 140033358229568] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'

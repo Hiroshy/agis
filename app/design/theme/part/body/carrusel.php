@@ -1,8 +1,8 @@
 <div class="container-fluid p-0">
       <div id="controles" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="app/design/theme/assets/media/carousel/bomberos_agis.jpg" src="app/design/theme/assets/media/carousel/bomberos_agis.jpg 1024w,/assets/media/carousel/bomberos_agis_mobil.jpg 900w" class="img-fluid w-100" alt="Bomberos de AGIS">
+          <div class="carousel-item">
+            <img src="/app/design/theme/assets/media/carousel/bomberos_agis.jpg" src="/app/design/theme/assets/media/carousel/bomberos_agis.jpg 1024w,/assets/media/carousel/bomberos_agis_mobil.jpg 900w" class="img-fluid w-100" alt="Bomberos de AGIS">
             <div class="carousel-caption d-none center_content_carousel">
               <h5 class="text-dark display-4">RECARGA DE <span class="bg-danger text-light">&nbsp;EXTINTORES&nbsp;</span></h5>
               <div class="form-group mt-4 d-sm-none">
@@ -13,7 +13,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="app/design/theme/assets/media/carousel/bomberos_agis.jpg" src="app/design/theme/assets/media/carousel/bomberos_agis.jpg 1024w,/assets/media/carousel/bomberos_agis_mobil.jpg 800w" class="img-fluid w-100" alt="Bomberos de AGIS">
+            <img src="/app/design/theme/assets/media/carousel/bomberos_agis.jpg" src="/app/design/theme/assets/media/carousel/bomberos_agis.jpg 1024w,/assets/media/carousel/bomberos_agis_mobil.jpg 800w" class="img-fluid w-100" alt="Bomberos de AGIS">
             <div class="carousel-caption d-none center_content_carousel">
               <p class="text-dark display-4">RECARGA DE <span class="bg-danger text-light"> &nbsp; EXTINTOS 2 &nbsp; </span></p>
               <div class="form-group mt-4 d-sm-none">

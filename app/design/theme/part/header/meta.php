@@ -1,6 +1,6 @@
 <!-- Required meta tags -->
 <meta charset="utf-8">
-<link rel="icon" href="app/design/theme/assets/media/logo/agis.png" type="image/png">
+<link rel="icon" href="/app/design/theme/assets/media/logo/agis.png" type="image/png">
 <meta name="author" content="<?php echo  $info_empresa['autor']; ?>">
 <meta name="viewport" content="width=device-width, user-scalable=no">
 <meta name="keywords" content="<?= $metaKeywords;?>">
