@@ -11,19 +11,19 @@
         </a>
     </div>
     <div class="col-md-4 align-self-center text-center b-desktop">
-        <a href="" class="font-weight-bold text-light pr-4" data-toggle="tooltip" data-placement="bottom" title="Encuentranos">
+        <!-- <a href="" class="font-weight-bold text-light pr-4" data-toggle="tooltip" data-placement="bottom" title="Encuentranos">
                 <i class="fas fa-street-view"></i>
-        </a>
+        </a> -->
         <button id="search_term" class="font-weight-bold text-light pr-4 btn-transparent">
             <i class="fas fa-search"></i>
         </button>
         <!-- modal buscar-->
-        <div id="form_buscar" class="modal_amesh_buscar" itemscope itemtype=”http://schema.org/WebSite”>
-            <meta itemprop=”url” content=”https://www.ejemplo.com/”/>
-            <form action="./buscar" itemprop=”potentialAction” itemscope itemtype=”http://schema.org/SearchAction”>
+        <div id="form_buscar" class="modal_amesh_buscar" itemscope itemtype="http://schema.org/WebSite">
+            <meta itemprop="url" content="//<?=$_SERVER['HTTP_HOST']?>/buscar?<?= ($_GET['search_term_string'])?$_GET['search_term_string']:'';?>"/>
+            <form action="/buscar" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
                 <div class="box-content">
-                    <meta itemprop=”target” content=”https://query.ejemplo.com/search?q={search_term_string}”/>
-                    <input itemprop=”query-input” type="text" name="search_term_string" id="search_by" class="form-control pd-3" autocorrect="on">
+                    <meta itemprop="target" content="//<?=$_SERVER['HTTP_HOST']?>/buscar?<?= ($_GET['search_term_string'])?$_GET['search_term_string']:'';?>"/>
+                    <input itemprop="query-input" type="text" name="search_term_string" id="search_by" class="form-control pd-3" autocorrect="on">
                     <button type="submit" class="btn_search">
                         <i class="fas fa-search"></i>
                     </button>

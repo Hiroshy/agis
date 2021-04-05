@@ -5,9 +5,12 @@
         function consultar($campos=null,$where=null) {
             $conexion=parent::conectar();
             try {
+
                 $query="";
+
                 #['edad','paterno']
                 #['edad < '=> 25]
+                
                 if (!empty($campos)) {
                     foreach($campos as $campo){
                         $cadena .= $campo .',';
@@ -52,7 +55,7 @@
                     return $message;
                 }
             } catch (Exception $e) {
-                exit('Error : .$e->getMessage()');
+                exit('Error : '.$e->getMessage());
             }
         }
 

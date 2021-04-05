@@ -6,7 +6,8 @@
         function consultar($campos=null,$where=null) {
             $conexion=parent::conectar();
             try {
-                $query="";
+                $query=""; 
+
                 #['edad','paterno']
                 #['edad < '=> 25]
                 if (!empty($campos)) {
@@ -26,7 +27,7 @@
                         }
                     }
 
-                    $query= "SELECT {$cadena} FROM {$this->table} WHERE ".implode('AND',$conditions);
+                    $query= "SELECT {$cadena} FROM {$this->table} WHERE ".implode(' AND ',$conditions);
                 }else{
                     $query= "SELECT {$cadena} FROM {$this->table}";
                 }
@@ -37,7 +38,7 @@
 
                 return $querySend;
             } catch (Exception $e) {
-                exit('Error : .$e->getMessage()');
+                exit('Error : '.$e->getMessage());
             }
         }
 

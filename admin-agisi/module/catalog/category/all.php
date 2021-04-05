@@ -1,4 +1,4 @@
-<?php 
+<?php
     include_once("../../../model/bd.php");
     include_once("../../../controller/info-page.php");
     include_once("../../../model/store_info.class.php");
@@ -92,7 +92,7 @@
                                 </table>
                             </div>
                         </div>
-                    <!-- container -->
+                    <!-- container --> 
 
                 </div>
                 <!-- content -->

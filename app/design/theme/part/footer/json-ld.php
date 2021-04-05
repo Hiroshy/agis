@@ -1,12 +1,12 @@
-<script type=”application/ld+json”>
+<script type="application/ld+json">
     {
-    “@context”: “http://schema.org”,
-    “@type”: “WebSite”,
-    “url”: “https://www.ejemplo.com/”,
-    “potentialAction”: {
-            “@type”: “SearchAction”,
-            “target”: “https://query.ejemplo.com/search?q={search_term_string}”,
-            “query-input”: “required name=search_term_string”
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.ejemplo.com/",
+    "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://query.ejemplo.com/search?q=<?= ($_GET['search_term_string'])?$_GET['search_term_string']:'';?>",
+            "query-input": "required name=search_term_string"
         }
     }
 </script>

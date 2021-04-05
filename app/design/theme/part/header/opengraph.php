@@ -21,12 +21,12 @@
 <meta property="og:image:alt"content="<?= $metaDescription; ?>" >
 <meta name="robots" content="index,follow">
 
-<meta name="theme-color" content="<?= $themeColorDash; ?>" >
+<meta name="theme-color" content="#A82323">
 <meta name="MobileOptimized" content="width">
 <meta name="HandheldFriendly" content="true">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="shortcut icon" type="image/png" href=<?=$iconBussines;?>">
-<link rel="apple-touch-icon" href="<?=$iconBussines;?>">
-<link rel="apple-touch-startup-image" href="<?=$iconBussines;?>">
+<link rel="shortcut icon" type="image/png" href="<?=$app['logo'];?>">
+<link rel="apple-touch-icon" href="<?=$app['logo'];?>">
+<link rel="apple-touch-startup-image" href="<?=$app['logo'];?>">
 <link rel="manifest" href="<?= __DIR__ ?>">

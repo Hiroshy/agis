@@ -21,7 +21,7 @@
                         </a>
                     </li>
                     <li class="list_child">
-                        <a href="" class="item_list">
+                        <a href="https://<?= $linkDesktop.$app['telefono'];?>" class="item_list" new>
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </li>
@@ -41,18 +41,8 @@
             <div class="col-12 form-group">
                 <ul class="list flex-column text-left pl-4">
                     <li class="list_child title__cool_nav mr-2">
-                        <a href="" class="item_list">
+                        <a href="/#nuevos-productos" class="item_list">
                             Lo más vendido
-                        </a>
-                    </li>
-                    <li class="list_child title__cool_nav mr-2">
-                        <a href="categoria" class="item_list">
-                            Categorias
-                        </a>
-                    </li>
-                    <li class="list_child title__cool_nav mr-2">
-                        <a href="" class="item_list">
-                            Productos
                         </a>
                     </li>
                     <li class="list_child title__cool_nav mr-2">
@@ -92,12 +82,12 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div id="form_buscar" class="modal-body" itemscope itemtype=”http://schema.org/WebSite”>
-            <meta itemprop=”url” content=”https://www.ejemplo.com/”/>
-            <form action="./buscar" itemprop=”potentialAction” itemscope itemtype=”http://schema.org/SearchAction”>
+      <div id="form_buscar" class="modal-body" itemscope itemtype="http://schema.org/WebSite">
+            <meta itemprop="url" content="//<?=$_SERVER['HTTP_HOST']?>/buscar?<?= ($_GET['search_term_string'])?$_GET['search_term_string']:'';?>"/>
+            <form action="/buscar" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
                 <div class="box-content">
-                    <meta itemprop=”target” content=”https://query.ejemplo.com/search?q={search_term_string}”/>
-                    <input itemprop=”query-input” type="text" name="”search_term_string”" id="search_by" class="form-control pd-3" autocorrect="on">
+                    <meta itemprop="target" content="//<?=$_SERVER['HTTP_HOST']?>/buscar?<?= ($_GET['search_term_string'])?$_GET['search_term_string']:'';?>"/>
+                    <input itemprop="query-input" type="text" name="search_term_string" id="search_by" class="form-control pd-3" autocorrect="on">
                     <button type="submit" class="btn_search">
                         <i class="fas fa-search"></i>
                     </button>

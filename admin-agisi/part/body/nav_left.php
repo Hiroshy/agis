@@ -158,7 +158,10 @@
                                 <a href="<?= $app['base_url_admin']; ?>module/design/elements/plantillas">Plantillas</a>
                             </li>
                             <li>
-                                <a href="<?= $app['base_url_admin']; ?>module/design/elements/sliders">Sliders</a>
+                                <a href="<?= $app['base_url_admin']; ?>module/design/elements/sliders/all">Sliders</a>
+                            </li>
+                            <li>
+                                <a href="<?= $app['base_url_admin']; ?>module/design/elements/slidersPromo/all">Proociones</a>
                             </li>
                         </ul>
                     </li>

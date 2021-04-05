@@ -14,9 +14,21 @@
         </div>
         <div class="col-lg-4 col-md-4 text-left pt-2 pb-5 text-light">
             <ul>
-                <li>Cóntacta a un asesor</li>
-                <li>ventas@agis.com</li>
-                <li>Dirección de la empresa</li>
+                <li>
+                    <a href="<?= $app['telefono']; ?>" class="text-light">
+                        Cóntacta a un asesor
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:<?= $app['email'];?>" class="text-light">
+                        <?= $app['email'];?>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= $app['direccion'];?>" class="text-light">
+                        <?= $app['direccion_url'];?>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="col-lg-4 col-md-4 pt-2 pb-5 text-light">
