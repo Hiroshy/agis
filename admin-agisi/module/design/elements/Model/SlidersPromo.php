@@ -65,7 +65,7 @@
             try {
                 $query="UPDATE {$this->table} SET title='$data[title]',parraf='$data[parraf]',url='$data[url]'";
                 if (isset($data['image']) AND isset($data['image_mobile'])) {
-                    $query.=",image='$data[image]' , image='$data[image_mobile] ";
+                    $query.=",image='$data[image]' , image_mobile='$data[image_mobile]' ";
                 }else{
                     if (isset($data['image'])) {
                         $query.=",image='$data[image]'";

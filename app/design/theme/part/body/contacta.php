@@ -62,7 +62,8 @@
 
                     $lead = new Chat();
                     $lead->insertar($data);
-                    ?>
+                    $mi_mensaje_wsp="https://$linkDesktop$app[telefono]&text=¡Hola! Mi *nombre* es $data[name] $data[lastname] estoy *interesado* en sus servicios mi número de *teléfono* es $data[phono].*Accedí al siguiente link* https:$data[url]. Con el siguiente *mensaje* : $data[message]. *Gracias* *por* *su* *atención* ";
+                    ?> 
                     <script> 
                         location.href='<?= $mi_mensaje_wsp;?>'
                     </script>

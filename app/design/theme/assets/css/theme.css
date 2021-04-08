@@ -462,6 +462,12 @@ input[type = "radio"]:checked ~ label{color:orange;}
 }
 
 @media screen and (max-width:500px){
+    .title__cool{
+        font-size: 1.50rem !important;
+    }
+    .swiper-slide {
+        font-size: 15px !important;
+    }
     .h3, h3 {
         font-size: 1.2rem;
     }

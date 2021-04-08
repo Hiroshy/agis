@@ -8,7 +8,7 @@
           <div class="carousel-item">
           <img src="<?= $ruta.$slider['image'];?>" src="<?= $ruta.$slider['image'];?> 1024w,<?= $ruta.$slider['image_mobile'];?> 900w" class="img-fluid w-100" alt="Bomberos de AGIS">
             <div class="carousel-caption promo d-md-block p-3">
-              <div class="text-left">
+              <div class="text-left text-dark">
                 <p class="h2"><?= $slider['title'];?></p>
                 <p><?= $slider['parraf'];?></p>
                 <div class="form-group mt-4">

@@ -1,0 +1,4 @@
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.8. Set the 'ServerName' directive globally to suppress this message
+[Thu Apr 08 04:02:44.479387 2021] [core:warn] [pid 15:tid 140324480663616] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Apr 08 04:02:44.480206 2021] [mpm_event:notice] [pid 15:tid 140324480663616] AH00489: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Thu Apr 08 04:02:44.480224 2021] [core:notice] [pid 15:tid 140324480663616] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'

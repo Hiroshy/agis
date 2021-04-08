@@ -90,7 +90,7 @@ include("admin-agisi/module/chat/Model/Chat.php"); ?>
         </div>
     </div>
     
-    <?php 
+    <?php
       include('app/design/theme/part/body/categoria.php');
     ?>
     <?php include('app/design/theme/part/body/contacta.php'); ?>
@@ -99,8 +99,10 @@ include("admin-agisi/module/chat/Model/Chat.php"); ?>
           <p class="h1 title__cool">Categorias</p>
         </div>
     </div>
-    <?php
-      include('app/design/theme/part/body/categoria.php');
+    <?php 
+      $mis_categorias_ =  $category ;
+      $categorias_ = $mis_categorias_->consultar();
+      include('app/design/theme/part/body/categoria_.php');
     ?>
     <?php include('app/design/theme/part/body/banner.php'); ?>
     <?php include('app/design/theme/part/footer/footer.php');?>
